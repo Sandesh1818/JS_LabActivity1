@@ -1,0 +1,82 @@
+<html> 
+<head> 
+  <title>Set table alternative row background colour using JavaScript</title> 
+</head> 
+<body> 
+	  <table align="center" id="tblMain" style="border: solid 1px black;" cellpadding="6" 
+	  cellspacing="1" width="400px" height> 
+	  <th>S.N </th> 
+	  <th> Name</th>
+	  <th> Image</th>
+
+	  <tr> 
+		  <td style="text-align: center;"> 
+		  1 
+		  </td> 
+		  <td style="text-align: center;">
+		  	Name 1
+		  </td>
+		  <td style="text-align: center;">
+		  	1.jpg
+		  </td>
+
+	  </tr> 
+	  <tr > 
+		  <td style="text-align: center;"> 
+		  2 
+		  </td> 
+		  <td style="text-align: center;">
+		  	Name 2
+		  </td>
+		  <td style="text-align: center;">
+		  	2.jpg
+		  </td>
+
+	  </tr>
+	  <tr> 
+		  <td style="text-align: center;"> 
+		  3
+		  </td> 
+		  <td style="text-align: center;">
+		  	Name 3
+		  </td>
+		  <td style="text-align: center;">
+		  	3.jpg
+		  </td>
+
+	  </tr>
+	  <tr> 
+		  <td style="text-align: center;"> 
+		  4 
+		  </td> 
+		  <td style="text-align: center;">
+		  	Name 4
+		  </td>
+		  <td style="text-align: center;">
+		  	4.jpg
+		  </td>
+
+	  </tr> 
+	    
+	  </table> 
+	  <script class="text/javascript"> 
+	  var tbl = document.getElementById("tblMain"); 
+	  if (tbl != null) { 
+	  if (tbl.rows[0] != null) { 
+	  tbl.rows[0].style.backgroundColor = "#16A9E2"; 
+	  tbl.rows[0].style.color = "fff"; 
+	   } 
+	  for (var i = 1; i < tbl.rows.length; i++) { 
+	  if (i % 2 == 0){
+	  tbl.rows[i].style.backgroundColor = "#EEF2F4";
+	  }
+	  if (i % 2 != 0){ 
+	   tbl.rows[i].style.backgroundColor="#BEC6C8";
+	  }
+	  
+	  }
+
+	  } 
+	  </script> 
+</body> 
+</html>
